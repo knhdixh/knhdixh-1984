@@ -2,7 +2,7 @@
 
 A one-page list of browser extensions that keep pages reporting visible and focused, plus a one-click install for the Anti-Visibility Cloak userscript.
 
-**Live:** https://1984.knhdixh.com
+**Live:** https://1984.knhdixh.com · auto-deploys from `main` via Workers Builds
 
 ![Screenshot](docs/screenshot.png)
 
