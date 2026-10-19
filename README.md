@@ -12,7 +12,7 @@ A one-page list of browser extensions that keep pages reporting visible and focu
 |---|---|
 | Extensions | Always Active Window, Clipper, Disable Page Visibility, Focus Spoofer, NO SCAN, Tampermonkey, each linked to its Chrome Web Store listing |
 | Userscript | [Anti-Visibility Cloak (local repair)](https://gist.github.com/knhdixh/d48dbae23d7a6f25bff6f194a2ce1057), with an Install button pointing at the Gist's raw `.user.js` URL (Tampermonkey picks it up) and a link to view the Gist |
-| Setup | Four Tampermonkey steps, including turning on **Allow user scripts** in `chrome://extensions` |
+| Setup | Tampermonkey steps: turn on **Allow user scripts** in `chrome://extensions`, then install with the button, from the Gist's Raw view, or by pasting the code into a new script |
 
 The Install link uses the Gist's latest raw URL, so editing the Gist updates what new installs get without redeploying the site.
 

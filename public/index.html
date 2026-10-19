@@ -137,6 +137,8 @@
   /* Setup steps: two columns, text wraps. */
   .step { grid-template-columns: 36px 1fr; }
   .step .up { font-weight: 400; }
+  .step a { color: var(--fg); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+  .step a:focus-visible { outline: 1px solid var(--fg); outline-offset: 4px; }
   code { font: inherit; font-size: 14px; color: var(--muted); }
 
   /* ---------- script ---------- */
@@ -245,11 +247,19 @@
       </div></li>
       <li style="--i:8"><div class="row step">
         <span class="mask"><span class="up num">03</span></span>
-        <span class="mask"><span class="up">Press Install below, then Install again in Tampermonkey. Disable any older copy.</span></span>
+        <span class="mask"><span class="up">Press Install below. Tampermonkey opens the script in a new tab; press Install there.</span></span>
       </div></li>
       <li style="--i:9"><div class="row step">
         <span class="mask"><span class="up num">04</span></span>
-        <span class="mask"><span class="up">Reload the page you want it on.</span></span>
+        <span class="mask"><span class="up">Or open the <a href="https://gist.github.com/knhdixh/d48dbae23d7a6f25bff6f194a2ce1057">gist</a>, press Raw on <code>anti-visibility-cloak.user.js</code>, and install from the Tampermonkey tab.</span></span>
+      </div></li>
+      <li style="--i:10"><div class="row step">
+        <span class="mask"><span class="up num">05</span></span>
+        <span class="mask"><span class="up">No Tampermonkey tab? Copy the <a href="https://gist.github.com/knhdixh/d48dbae23d7a6f25bff6f194a2ce1057">gist</a>’s code, open Tampermonkey → Create a new script, replace everything, and save.</span></span>
+      </div></li>
+      <li style="--i:11"><div class="row step">
+        <span class="mask"><span class="up num">06</span></span>
+        <span class="mask"><span class="up">Disable any older copy, then reload the page you want it on.</span></span>
       </div></li>
     </ol>
     <div class="fade">
