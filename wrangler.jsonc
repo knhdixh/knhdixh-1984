@@ -1,0 +1,19 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "knhdixh-1984",
+  "main": "src/worker.js",
+  "compatibility_date": "2026-09-19",
+  "routes": [{ "pattern": "1984.knhdixh.com", "custom_domain": true }],
+  // Keep the *.workers.dev address (it redirects to the custom domain); per-version preview URLs aren't needed.
+  "workers_dev": true,
+  "preview_urls": false,
+  "observability": { "enabled": true },
+  "vars": { "CANONICAL_HOST": "1984.knhdixh.com" },
+  "assets": {
+    "directory": "public",
+    "binding": "ASSETS",
+    "not_found_handling": "404-page",
+    // The Worker runs first so *.workers.dev can redirect; everything else is static (public/).
+    "run_worker_first": true
+  }
+}
